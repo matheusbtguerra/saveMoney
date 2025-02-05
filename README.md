@@ -1,50 +1,70 @@
-# React + TypeScript + Vite
+# $Save Money
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-Matheus%20Borges%20de%20Toledo%20Guerra-blue?logo=linkedin&logoColor=white)](https://www.linkedin.com/in/matheus-borges-de-toledo-guerra-2482522b3/)
 
-Currently, two official plugins are available:
+## Description
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+**Save Money** is a web application designed to help manage personal finances. It allows users to record income and expenses, categorize them, and gain a detailed view of their financial health.
 
-## Expanding the ESLint configuration
+## Technologies Used
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+- **React**: JavaScript library for building user interfaces.
+- **Vite**: Fast build tool for front-end projects.
+- **TypeScript**: Superset of JavaScript that adds static typing.
+- **Mirage.js**: Library for API simulation in development environments.
+- **React Modal**: Used for creating interactive modals.
+- **State Management**: Implemented using React State and Context API.
+- **Axios**: HTTP client for asynchronous requests.
+- **React Hooks**: Used for handling side effects in functional components.
 
-- Configure the top-level `parserOptions` property like this:
+## Features
 
-```js
-export default tseslint.config({
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
-```
+- Record and categorize income and expenses.
+- View balance and transaction history.
+- API simulation for development.
 
-- Replace `tseslint.configs.recommended` to `tseslint.configs.recommendedTypeChecked` or `tseslint.configs.strictTypeChecked`
-- Optionally add `...tseslint.configs.stylisticTypeChecked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and update the config:
+## Demo
 
-```js
-// eslint.config.js
-import react from 'eslint-plugin-react'
+![Demo 1](https://github.com/matheusbtguerra/saveMoney/blob/main/src/assets/demo1.png)
 
-export default tseslint.config({
-  // Set the react version
-  settings: { react: { version: '18.3' } },
-  plugins: {
-    // Add the react plugin
-    react,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended rules
-    ...react.configs.recommended.rules,
-    ...react.configs['jsx-runtime'].rules,
-  },
-})
-```
+![Demo 2](https://github.com/matheusbtguerra/saveMoney/blob/main/src/assets/demo2.png)
+
+![Demo 3](https://github.com/matheusbtguerra/saveMoney/blob/main/src/assets/demo3.png)
+## Installation
+
+To run the project locally, follow these steps:
+
+1. **Clone the repository:**
+
+   ```bash
+   git clone https://github.com/matheusbtguerra/saveMoney.git
+   cd saveMoney
+   ```
+
+2. **Install dependencies:**
+
+   ```bash
+   npm install
+   ```
+
+3. **Run the application:**
+
+   ```bash
+   npm run dev
+   ```
+
+   Access `http://localhost:5173` to view the application.
+
+## Contribution
+
+Contributions are welcome! Feel free to open issues and pull requests.
+
+## License
+
+This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for more details.
+
+## Contact
+
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-Matheus%20Borges%20de%20Toledo%20Guerra-blue?logo=linkedin&logoColor=white)](https://www.linkedin.com/in/matheus-borges-de-toledo-guerra-2482522b3/)
+
